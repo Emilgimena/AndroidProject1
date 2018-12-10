@@ -25,6 +25,8 @@ public class Main2Activity extends Activity {
     int[] alphabetArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
     int index;
     String corr, inco;
+    Boolean ifPress1, ifPress2, ifPress3, ifPress4, ifPress5, ifPress6, ifPress7, ifPress8,
+            ifPress9, ifPress10, ifPress11, ifPress12, ifPress13, ifPress14, ifPress15, ifPress16;
     int correctScore, incorrectScore;
 
     private int []bar = new int[] {
@@ -213,13 +215,29 @@ public class Main2Activity extends Activity {
                 timer.setText(""+String.format(FORMAT,
                         TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished) - TimeUnit.MINUTES.toSeconds(
                                 TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished))));
+                b1.setClickable(false);
+                b2.setClickable(false);
+                b3.setClickable(false);
+                b4.setClickable(false);
+                b5.setClickable(false);
+                b6.setClickable(false);
+                b7.setClickable(false);
+                b8.setClickable(false);
+                b9.setClickable(false);
+                b10.setClickable(false);
+                b11.setClickable(false);
+                b12.setClickable(false);
+                b13.setClickable(false);
+                b14.setClickable(false);
+                b15.setClickable(false);
+                b16.setClickable(false);
             }
 
             public void onFinish() {
                 for(int i = 0; i < 16; i++){
                     Button btn = findViewById(bar[i]);
                     btn.setText(questionMark);
-                    btn.setEnabled(true);
+                    btn.setClickable(true);
                 }
             }
         }.start();
@@ -357,93 +375,178 @@ public class Main2Activity extends Activity {
     private void calculate() {
         if(firstNumber == secondNumber) {
             if(firstClick == 0) {
-                b1.setClickable(false);
+                b1.setOnClickListener(null);
+                b1.setPressed(true);
             } else if(firstClick == 1) {
-                b2.setClickable(false);
+                b2.setOnClickListener(null);
+                b2.setPressed(true);
             } else if(firstClick == 2) {
-                b3.setClickable(false);
+                b3.setOnClickListener(null);
+                b3.setPressed(true);
             } else if(firstClick == 3) {
-                b4.setClickable(false);
+                b4.setOnClickListener(null);
+                b4.setPressed(true);
             } else if(firstClick == 4) {
-                b5.setClickable(false);
+                b5.setOnClickListener(null);
+                b5.setPressed(true);
             } else if(firstClick == 5) {
-                b6.setClickable(false);
+                b6.setOnClickListener(null);
+                b6.setPressed(true);
             } else if(firstClick == 6) {
-                b7.setClickable(false);
+                b7.setOnClickListener(null);
+                b7.setPressed(true);
             } else if(firstClick == 7) {
-                b8.setClickable(false);
+                b8.setOnClickListener(null);
+                b8.setPressed(true);
             } else if(firstClick == 8) {
-                b9.setClickable(false);
+                b9.setOnClickListener(null);
+                b9.setPressed(true);
             } else if(firstClick == 9) {
-                b10.setClickable(false);
+                b10.setOnClickListener(null);
+                b10.setPressed(true);
             } else if(firstClick == 10) {
-                b11.setClickable(false);
+                b11.setOnClickListener(null);
+                b11.setPressed(true);
             } else if(firstClick == 11) {
-                b12.setClickable(false);
+                b12.setOnClickListener(null);
+                b12.setPressed(true);
             } else if(firstClick == 12) {
-                b13.setClickable(false);
+                b13.setOnClickListener(null);
+                b13.setPressed(true);
             } else if(firstClick == 13) {
-                b14.setClickable(false);
+                b14.setOnClickListener(null);
+                b14.setPressed(true);
             } else if(firstClick == 14) {
-                b15.setClickable(false);
+                b15.setOnClickListener(null);
+                b15.setPressed(true);
             } else if(firstClick == 15) {
-                b16.setClickable(false);
+                b16.setOnClickListener(null);
+                b16.setPressed(true);
             }
 
             if(secondClick == 0) {
-                b1.setClickable(false);
+                b1.setOnClickListener(null);
+                b1.setPressed(true);
             } else if(secondClick == 1) {
-                b2.setClickable(false);
+                b2.setOnClickListener(null);
+                b2.setPressed(true);
             } else if(secondClick == 2) {
-                b3.setClickable(false);
+                b3.setOnClickListener(null);
+                b3.setPressed(true);
             } else if(secondClick == 3) {
-                b4.setClickable(false);
+                b4.setOnClickListener(null);
+                b4.setPressed(true);
             } else if(secondClick == 4) {
-                b5.setClickable(false);
+                b5.setOnClickListener(null);
+                b5.setPressed(true);
             } else if(secondClick == 5) {
-                b6.setClickable(false);
+                b6.setOnClickListener(null);
+                b6.setPressed(true);
             } else if(secondClick == 6) {
-                b7.setClickable(false);
+                b7.setOnClickListener(null);
+                b7.setPressed(true);
             } else if(secondClick == 7) {
-                b8.setClickable(false);
+                b8.setOnClickListener(null);
+                b8.setPressed(true);
             } else if(secondClick == 8) {
-                b9.setClickable(false);
+                b9.setOnClickListener(null);
+                b9.setPressed(true);
             } else if(secondClick == 9) {
-                b10.setClickable(false);
+                b10.setOnClickListener(null);
+                b10.setPressed(true);
             } else if(secondClick == 10) {
-                b11.setClickable(false);
+                b11.setOnClickListener(null);
+                b11.setPressed(true);
             } else if(secondClick == 11) {
-                b12.setClickable(false);
+                b12.setOnClickListener(null);
+                b12.setPressed(true);
             } else if(secondClick == 12) {
-                b13.setClickable(false);
+                b13.setOnClickListener(null);
+                b13.setPressed(true);
             } else if(secondClick == 13) {
-                b14.setClickable(false);
+                b14.setOnClickListener(null);
+                b14.setPressed(true);
             } else if(secondClick == 14) {
-                b15.setClickable(false);
+                b15.setOnClickListener(null);
+                b15.setPressed(true);
             } else if(secondClick == 15) {
-                b16.setClickable(false);
+                b16.setOnClickListener(null);
+                b16.setPressed(true);
             }
             correctScore += 1;
             corr = Integer.toString(correctScore);
             cr.setText(corr);
 
         } else {
-            b1.setText("???");
-            b2.setText("???");
-            b3.setText("???");
-            b4.setText("???");
-            b5.setText("???");
-            b6.setText("???");
-            b7.setText("???");
-            b8.setText("???");
-            b9.setText("???");
-            b10.setText("???");
-            b11.setText("???");
-            b12.setText("???");
-            b13.setText("???");
-            b14.setText("???");
-            b15.setText("???");
-            b16.setText("???");
+
+            if(firstClick == 0) {
+                b1.setText("???");
+            } else if(firstClick == 1) {
+                b2.setText("???");
+            } else if(firstClick == 2) {
+                b3.setText("???");
+            } else if(firstClick == 3) {
+                b4.setText("???");
+            } else if(firstClick == 4) {
+                b5.setText("???");
+            } else if(firstClick == 5) {
+                b6.setText("???");
+            } else if(firstClick == 6) {
+                b7.setText("???");
+            } else if(firstClick == 7) {
+                b8.setText("???");
+            } else if(firstClick == 8) {
+                b9.setText("???");
+            } else if(firstClick == 9) {
+                b10.setText("???");
+            } else if(firstClick == 10) {
+                b11.setText("???");
+            } else if(firstClick == 11) {
+                b12.setText("???");
+            } else if(firstClick == 12) {
+                b13.setText("???");
+            } else if(firstClick == 13) {
+                b14.setText("???");
+            } else if(firstClick == 14) {
+                b15.setText("???");
+            } else if(firstClick == 15) {
+                b16.setText("???");
+            }
+
+            if(secondClick == 0) {
+                b1.setText("???");
+            } else if(secondClick == 1) {
+                b2.setText("???");
+            } else if(secondClick == 2) {
+                b3.setText("???");
+            } else if(secondClick == 3) {
+                b4.setText("???");
+            } else if(secondClick == 4) {
+                b5.setText("???");
+            } else if(secondClick == 5) {
+                b6.setText("???");
+            } else if(secondClick == 6) {
+                b7.setText("???");
+            } else if(secondClick == 7) {
+                b8.setText("???");
+            } else if(secondClick == 8) {
+                b9.setText("???");
+            } else if(secondClick == 9) {
+                b10.setText("???");
+            } else if(secondClick == 10) {
+                b11.setText("???");
+            } else if(secondClick == 11) {
+                b12.setText("???");
+            } else if(secondClick == 12) {
+                b13.setText("???");
+            } else if(secondClick == 13) {
+                b14.setText("???");
+            } else if(secondClick == 14) {
+                b15.setText("???");
+            } else if(secondClick == 15) {
+                b16.setText("???");
+
+            }
             incorrectScore += 1;
             inco = Integer.toString(incorrectScore);
             incr.setText(inco);
